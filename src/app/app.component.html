@@ -1,0 +1,8 @@
+<app-child [receiveMess]="parentMessage" (voteSize)="voteCount($event)"></app-child>
+
+<h1>Total vote from children: {{vote}}</h1>
+
+<hr>
+<h1>Data service</h1>
+
+<app-share-data></app-share-data>
