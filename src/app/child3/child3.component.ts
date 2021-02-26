@@ -12,5 +12,4 @@ export class Child3Component implements OnInit {
   ngOnInit(): void {
     this.data.crrNum.subscribe(number => this.num = number);
   }
-
 }

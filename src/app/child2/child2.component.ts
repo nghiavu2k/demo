@@ -12,6 +12,6 @@ export class Child2Component implements OnInit {
   }
 
   changeNum(num: number) {
-    this.data.changNum(num);
+    this.data.changeNum(num);
   }
 }

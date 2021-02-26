@@ -10,7 +10,7 @@ export class DataService {
 
   constructor() { }
 
-  changNum(num: number){
+  changeNum(num: number) {
     this.num.next(num);
   }
 }
