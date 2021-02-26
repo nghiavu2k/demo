@@ -6,14 +6,12 @@ import { DataService } from '../services/data.service';
   templateUrl: './child2.component.html'
 })
 export class Child2Component implements OnInit {
-
   constructor(private data: DataService) { }
 
   ngOnInit(): void {
   }
 
-  createMessage(message: string) {
-    this.data.changeMessage(message);
+  changeNum(num: number) {
+    this.data.changNum(num);
   }
-
 }

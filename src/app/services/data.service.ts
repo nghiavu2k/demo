@@ -5,14 +5,12 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class DataService {
-  messageSource = new BehaviorSubject<string>("default message");
-  currentMessage = this.messageSource.asObservable();
-  // có thể subcribe theo dõi thay đổi value của biến này thay cho messageSource
+  num = new BehaviorSubject<number>(1);
+  crrNum = this.num.asObservable();
 
   constructor() { }
 
-  // method này để change source message 
-  changeMessage(message: string) {
-    this.messageSource.next(message);
+  changNum(num: number){
+    this.num.next(num);
   }
 }

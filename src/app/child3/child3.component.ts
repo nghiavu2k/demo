@@ -6,11 +6,11 @@ import { DataService } from '../services/data.service';
   templateUrl: './child3.component.html'
 })
 export class Child3Component implements OnInit {
-  message!: string;
+  num!: number;
   constructor(private data: DataService) { }
 
   ngOnInit(): void {
-    this.data.currentMessage.subscribe(message => this.message = message);
+    this.data.crrNum.subscribe(number => this.num = number);
   }
 
 }

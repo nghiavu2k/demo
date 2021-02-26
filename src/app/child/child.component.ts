@@ -6,6 +6,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class ChildComponent implements OnInit {
   @Input() receiveMess!: string;
+
   @Output() voteSize = new EventEmitter();
   counter: number = 0;
   constructor() { }
@@ -17,5 +18,4 @@ export class ChildComponent implements OnInit {
     this.counter++;
     this.voteSize.emit(this.counter);
   }
-
 }
