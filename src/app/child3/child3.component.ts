@@ -10,6 +10,6 @@ export class Child3Component implements OnInit {
   constructor(private data: DataService) { }
 
   ngOnInit(): void {
-    this.data.crrNum.subscribe(number => this.num = number);
+    this.data.currNum.subscribe(number => this.num = number);
   }
 }

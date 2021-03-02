@@ -6,7 +6,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class DataService {
   num = new BehaviorSubject<number>(1);
-  crrNum = this.num.asObservable();
+  currNum = this.num.asObservable();
 
   constructor() { }
 
